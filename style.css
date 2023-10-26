@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 18px;
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.tamanho {
+  width: 920px;
+  margin: 0 auto;
+}
+
+#navbar {
+  background-color: #0DC0DF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+ul a {
+  font-weight: bold;
+  padding: 8px 12px;
+}
+ul a:hover {
+  background-color: #f1fa3c;
+  color: black;
+}
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/imgs/bola-batendo-na-rede.jpg);
+  background-attachment: fixed;
+  background-color: #444;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#welcome-section article {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+#welcome-section article h1 {
+  font-size: 3em;
+}
+#welcome-section article p {
+  font-size: 1.5em;
+}
+
+#welcome-section h1 {
+    color: #0DC0DF;
+  }
+  
+  #welcome-section img {
+    gap: 200px;
+  }
+  
+#welcome-section button {
+  background-color: #0DC0DF;
+  height: 40px;
+  width: 250px;
+  border-radius: 95px;
+  color: #fff;
+  font-size: 25px;
+}
+
+#welcome-section button:hover {
+  background-color: #25A7C9;
+}
+
+#sobre-container {
+  padding-top: 100px;
+}
+#sobre {
+  padding: 20px 0;
+}
+#sobre h1 {
+  font-size: 1.5em;
+  padding: 5px 0;
+}
+#sobre p {
+  font-size: 1.1em;
+}
+hr {
+  border: none;
+  height: 5px;
+  width: 100px;
+  background-color: #f1fa3c;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#projetos-svg {
+  background-image: url(https://sendeyo.com/up/d/7fd4568b0c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+#projects {
+  background-color: aliceblue;
+  padding: 10px;
+  padding-top: 80px;
+}
+.titulo {
+  margin-bottom: 40px;
+}
+.titulo h1 {
+  padding: 5px 0;
+}
+
+#projetos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  text-align: center;
+  gap: 80px;
+}
+#projetos-container article {
+  padding: 15px;
+}
+#projetos-container .box:hover {
+  transform: scale(1.02);
+}
+#projetos-container h2 {
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 9px #FFCB45;
+  transition: all ease-in-out 0.2s;
+}
+
+#calc {
+  background: url(https://i.ibb.co/DMgjw5t/calculadora.png);
+  background-size: cover;
+  background-position: center top;
+}
+#flex {
+  background: url(https://i.ibb.co/k3K8fYp/flex.png);
+  background-size: cover;
+  background-position: center;
+}
+#product {
+  background: url(https://i.ibb.co/B3zDx8b/product.png);
+  background-size: cover;
+  background-position: center right;
+}
+#tribute {
+  background: url(https://i.ibb.co/94V56S8/tribute.png);
+  background-size: cover;
+}
+
+#footer-svg {
+  background-image: url(https://sendeyo.com/up/d/3825071b14);
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aliceblue;
+}
+footer {
+  text-align: center;
+  background-color: #0DC0DF;
+  padding: 10px;
+  color: white;
+}
+.sociais {
+  margin: 10px;
+}
+.sociais a {
+  padding: 8px 12px;
+  text-decoration: underline;
+  font-size: 1.4em;
+}
+.sociais i {
+  transition: all ease 0.4s;
+}
+.sociais a i:hover {
+  transform: scale(1.2);
+  color: #f1fa3c;
+}
+
+@media screen and (min-width: 1440px) {
+  ul a {
+    font-size: 1.1em;
+  }
+  #footer-svg {
+    height: 300px;
+  }
+  #projetos-svg {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 990px) {
+  body {
+    font-size: 16px;
+  }
+  .tamanho {
+    width: 90%;
+    padding: 0 20px;
+  }
+  #projetos-container {
+    grid-template-columns: 600px;
+    grid-template-rows: 500px;
+    justify-content: center;
+  }
+  .box {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #projetos-container {
+    grid-template-columns: 500px;
+    grid-template-rows: 400px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #projetos-container {
+    grid-template-columns: 400px;
+    grid-template-rows: 400px;
+    justify-content: center;
+  }
+
+  #welcome-section article h1 {
+    font-size: 2em;
+  }
+  #welcome-section article p {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 400px) {
+  #projetos-container {
+    grid-template-columns: 300px;
+    grid-template-rows: 400px;
+    justify-content: center;
+  }
+  .box {
+    height: 250px;
+  }
+}
